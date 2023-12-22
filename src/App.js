@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Success from './Success';
 import './App.css';
+import Card from './Card';
 
 function App() {
+  const [signin, setSignin] = useState(false);
+  const [eml, setEmail] = useState('');
+  console.log(eml);
+  const emailGetter = (email) =>{
+    setEmail(email);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {!signin ? <Card signin={signin} setSignin={setSignin} emailGetter={emailGetter}/>  : <Success signin={signin} setSignin={setSignin} eml={eml}/>}
     </div>
   );
 }

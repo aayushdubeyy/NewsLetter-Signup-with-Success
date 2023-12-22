@@ -1,0 +1,43 @@
+.main{
+    position: absolute;
+    width: 25em;
+    left: 35rem;
+    top: 9rem; 
+    margin: 0 auto;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: fit-content;
+    position: relative;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 25px;
+}
+.img{
+    width: 3rem;
+    height: 3rem;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.btn{
+    margin: 2rem auto;
+}
+.para{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.success-heading{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#par{
+    font-weight: 600;
+    display: inline;
+}
+span{
+    font-weight: 600;
+}
